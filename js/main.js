@@ -3,14 +3,13 @@ let obj1 = {
 	age: 41,
 }
 
+console.log(obj1);
 console.log(addLength(obj1));
 
 function addLength(obj) {
-	let resObj = {};
+	let resObj = {...obj};
 	let userLength = 0;
-
-	resObj = obj;
-
+	
 	for (let key in resObj) {
 		userLength++;
 	}
